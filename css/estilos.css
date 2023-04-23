@@ -95,7 +95,7 @@ footer {
 }
 
 .articlep {
-    margin: 50px;
+    margin: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -157,3 +157,42 @@ iframe{
 footer{
     grid-area: pie;
 }
+
+@media screen and (max-width: 600px){
+    *{
+        font-size: 2vw;
+    }
+    h1{
+        font-size: 3vw;
+    }
+    h2{
+        font-size: 2.5vw;
+    }
+    a{
+        font-size: 3vw;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imagen1 {
+        margin: 0 1vw 1vw 2vw;
+        width: 800px;
+        height: 500px;
+        z-index: 0;
+        overflow:scroll;
+    }
+    .parra1{
+        height: auto;
+    }
+    .imagen2{
+        margin: 0 1vw 1vw 2vw;
+        width: 800px;
+        height: 500px;
+        z-index: 0;
+        overflow:scroll;
+
+    }
+}
+    
