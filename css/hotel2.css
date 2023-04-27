@@ -1,0 +1,125 @@
+
+
+body{
+    margin: 0;
+    background-color:rgb(172, 213, 248);
+    color: rgb(15, 16, 16);
+    
+
+}
+
+.header{
+    background: rgb(48, 155, 222);
+    padding: 40px;
+    margin-bottom: 15px;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 400px;
+    height: 300px;
+}
+.container{
+    display: flex;
+    
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+
+.caja{
+    flex:25%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.caja img{
+    margin: 5px;
+    border: 2px solid black;
+    transition: 3s;
+   
+}
+
+.caja img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.titulo {
+    margin-left:35px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer{
+    background: rgb(48, 155, 222);
+    padding: 10px ;
+    margin-top: 15px;
+    
+}
+
+
+#derechosreservados{
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 3px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.15vw;
+    width: 650px;
+
+    animation-name: letra-animada;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes letra-animada{
+    0%{background:#ffffff; left: 0;}
+    25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
+    50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135);left:240px }
+    75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197);left:360px}
+    100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255) ;left:480px}
+}
+
+@media screen and (max-width: 480px){
+    .footer{ 
+        padding: 5px ;   
+        }
+
+    #derechosreservados{
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        }
+        @keyframes letra-animada{
+        0%{background:#ffffff; left: 0;}
+        25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57)}
+        50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135)}
+        75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197)}
+        100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255)}
+        }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .footer{ 
+        padding: 5px ;   
+        }
+
+    #derechosreservados{
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        }
+        @keyframes letra-animada{
+        0%{background:#ffffff; left: 0;}
+        25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57)}
+        50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135)}
+        75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197)}
+        100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255)}
+        }
+}
+

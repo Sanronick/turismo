@@ -1,0 +1,247 @@
+
+body{
+    margin: 0;
+    background-color:rgb(172, 213, 248);
+    color: rgb(15, 16, 16);
+    text-transform: uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    background: rgb(48, 155, 222);
+    padding: 40px;
+    margin-bottom: 15px;
+}
+
+.seccion{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    
+    padding: 30px;
+    width: 50%;
+    height: 260px;
+    margin: 35px 60px ;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10 px 10 px 10 px rgba(0, 0, 0, .5);
+}
+
+.seccion img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 2s;
+    text-align: center;
+}
+.seccion img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.parrafo{
+    text-align: left;
+    margin: 10px ;
+    padding: 20px;
+}
+.nombre{
+    
+    font-size: 1.5vw;
+}
+
+#precio{
+    color: rgb(19, 17, 16);
+    font-size: 10;
+    font-weight: 400;
+    padding-bottom: 20px;
+    
+}
+.estrella{
+    font-size:1.5vw;
+    color: rgb(214, 193, 57);
+    border: 1px;
+}
+.reserva{
+    color:aliceblue ;
+    background-color:rgb(10, 84, 196);
+    border: rgb(10, 84, 196) 1px solid;
+    cursor: pointer;
+    padding: 4px;
+}
+.mapa{
+    margin-left: 12px;
+    margin-top: 10px;
+    padding: 10px;
+    align-items:self-end;
+}
+
+.footer{
+    background: rgb(48, 155, 222);
+    padding: 10px ;
+    margin-top: 15px;
+    
+}
+
+
+#derechosreservados{
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 3px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.15vw;
+    width: 650px;
+
+    animation-name: letra-animada;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes letra-animada{
+    0%{background:#ffffff; left: 0;}
+    25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
+    50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135);left:240px }
+    75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197);left:360px}
+    100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255) ;left:480px}
+}
+
+@media screen and (max-width: 480px){
+
+    
+    .header{
+        
+        background-color:darkred ;
+    }
+
+    .seccion{
+        width: 40%;
+        margin: 20px;
+        height: 600px;
+        flex-direction: column;
+    }
+
+    .seccion img{
+        width: 200px;
+        height: 100px;
+        }
+    .mapa{
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        padding: 1px;
+        }
+
+    .nombre{
+    
+        font-size: 4vw;
+        }
+
+    .estrella{
+        font-size:4vw; 
+        }
+
+
+    .footer{ 
+        padding: 5px ;   
+        }
+
+    #derechosreservados{
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        }
+        @keyframes letra-animada{
+        0%{background:#ffffff; left: 0;}
+        25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57)}
+        50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135)}
+        75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197)}
+        100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255)}
+        }
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .header{
+        
+            background-color:rgb(69, 0, 139) ;
+        }
+    
+        .seccion{
+            width: 90%;
+            margin: 10px;
+            height: 300px;
+            padding-left: 0px;
+        }
+        .seccion img{
+            width: 225px;
+            height: 280px;
+            margin:5px;
+            padding: 5px;
+            }
+
+        .mapa{
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            padding: 1px;
+            }
+
+            .nombre{
+    
+                font-size: 2.7vw;
+                }
+        
+            .estrella{
+                font-size:3vw; 
+                }
+        
+        
+            .footer{ 
+                padding: 5px ;   
+                }
+        
+            #derechosreservados{
+                letter-spacing: 0.001;
+                font-size: 2vw;
+                padding: 0px;
+                margin-left: 0px;
+                }
+                @keyframes letra-animada{
+                0%{background:#ffffff; left: 0;}
+                25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57)}
+                50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135)}
+                75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197)}
+                100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255)}
+                }
+    }
+    @media screen and (min-width:769px) and (max-width:1024px){
+        .header{
+        
+            background-color:rgb(190, 31, 163) ;
+        }
+    
+        .seccion{
+            width: 80%;
+            margin: 10px;
+            height: 300px;
+            padding-left: 0px;
+        }
+        .seccion img{
+            width: 225px;
+            height: 280px;
+            margin:5px;
+            padding: 5px;
+            }
+
+        .mapa{
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            padding: 1px;
+            }
+    }
+
+
+
