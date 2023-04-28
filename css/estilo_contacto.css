@@ -6,6 +6,7 @@
 body{
     width: 95%;
     background-image:url(../img/02.jpg);
+    background-size: cover;
     background-color: black;
     margin: 3%;
 }

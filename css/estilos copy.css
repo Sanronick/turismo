@@ -1,0 +1,45 @@
+* {
+    margin: 10px;
+    font-family: Verdana;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #dce9e7;
+    text-align: center;
+    padding: 10px
+   
+}
+.box1{
+    grid-area: 1 / 1 / span 2 / span 4;
+}
+
+.box2{
+    grid-area: 2 / 1 / span 3/ span 4;
+}
+
+.box3{
+    grid-area: 5 / 1 / span 5/ span 1;
+}
+
+.box4{
+    grid-area: 5 / 2 / span 8/ span 1;
+}
+
+.box5{
+    grid-area: 5 / 3 / span 11/ span 1;
+}
+
+.box6{
+    grid-area: 5 / 4 / span 11/ span 1;
+}
+
+.box7{
+    grid-area: 17 / 1 / span 17/ span 4;
+}
+@media screen {max-width: 400px;
+    
+}
