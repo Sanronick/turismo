@@ -58,6 +58,7 @@ aside {
 
 footer {
     background-color: gray;
+    margin:1vw;
     padding: 1vw;
     font-size: 1vw;
     color: white;
@@ -267,9 +268,12 @@ iframe {
 
     .gra {
         width: 50vw;
-        height: 20vw;
+        height: 35vw;
         padding: auto;
         font-size: 3vw;
+    }
+    .footer{
+        margin: 1vw;
     }
     #derechosreservados{
         background-color: #ffffff;
@@ -375,8 +379,11 @@ iframe {
 
     .gra {
         width: 50vw;
-        height: 20vw;
+        height: 35vw;
         font-size: 3vw;
+    }
+    .footer{
+        margin: 1vw;
     }
 
 }
