@@ -190,6 +190,9 @@ iframe {
         flex-direction: column;
         justify-content: center;
     }
+    h2{
+        font-size: 3.5vw;
+    }
 
     .articlen {
         display: flex;
@@ -259,13 +262,13 @@ iframe {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: left;
+        
     }
 
     .gra {
-        margin: 0 0 0 0;
         width: 50vw;
         height: 20vw;
+        padding: auto;
         font-size: 3vw;
     }
     #derechosreservados{
@@ -305,7 +308,6 @@ iframe {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-content: flex-start;
     }
 
     #img1 {
@@ -345,7 +347,6 @@ iframe {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-content: flex-start;
     }
 
     .imagen2 {
@@ -369,11 +370,10 @@ iframe {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: left;
+       
     }
 
     .gra {
-        margin: 0 0 0 0;
         width: 50vw;
         height: 20vw;
         font-size: 3vw;
