@@ -2,49 +2,39 @@
     padding: 0;
     margin: 0;
 }
+.color{
+    color:blue;
+}
 
 body{
     width: 95%;
-    background-image:url(../img/02.jpg);
+    background-image:url(/img/02.jpg);
     background-size: cover;
-    background-color: black;
+    background-position: center;
     margin: 3%;
 }
-header{
-    background-color: rgb(38, 38, 150);
+.navbar-brand{
+    font-weight: bold;
+    font-size: 25px;
+    &:hover{
+        font-style: italic;
+    }                         
 }
-.menu{
+.navbar-nav{
     display: flex;
-    flex-direction: row;
-    list-style: none;
     justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: large;
-    align-items: center;
-    height: 100px;
-}
-.menu li{
-    border-bottom: none;
-}
-.opcion{
-    border-bottom: none;
-    color: white;
-    font-size: larger;
-    transition: all 0.3s ease;
-}
-.opcion:hover{
-    color: aqua;
-    transform: scale(1.2);
-}
-label{
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
+    width: 100%;
 }
 .form-control, .form-select{
     background-color: gray;
 }
+.btn{
+    background-color: rgb(227, 6, 235);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-left: 48%;
+}   
 
 .titulosFooter{
     color: black;
@@ -63,13 +53,35 @@ label{
     border-radius: 7px;
     border-color: black;
 }
-.btb{
-    text-align: center;
-}
+
 .ws_logo{
-    width: 100px;
-    height: 100px;
+    z-index: initial;
+    width: 50px;
+    height: 50px;
     position: fixed;
-    top: 500px;
-    left: 1100px;
-} 
+    top: 400px;
+    left: 20px;
+}
+#derechosreservados{
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 3px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.15vw;
+    width: 650px;
+
+    animation-name: letra-animada;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes letra-animada{
+    0%{background:#ffffff; left: 0;}
+    25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
+    50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135);left:240px }
+    75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197);left:360px}
+    100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255) ;left:480px}
+}

@@ -1,32 +1,35 @@
-
-body{
+body {
     margin: 0;
-    background-color:rgb(172, 213, 248);
+    background-image: url(/img/02.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(172, 213, 248); */
     color: rgb(15, 16, 16);
     text-transform: uppercase;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.header{
+
+.header {
     background: rgb(48, 155, 222);
     padding: 40px;
     margin-bottom: 15px;
 }
 
-.seccion{
+.seccion {
     background-color: azure;
     display: flex;
     flex-direction: row;
-    
+
     padding: 30px;
-    width: 50%;
+    width: 60%;
     height: 260px;
-    margin: 35px 60px ;
+    margin: 35px 60px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 10 px 10 px 10 px rgba(0, 0, 0, .5);
 }
 
-.seccion img{
+.seccion img {
     width: 300px;
     height: 250px;
     border-radius: 10px;
@@ -34,62 +37,67 @@ body{
     transition: 2s;
     text-align: center;
 }
-.seccion img:hover{
+
+.seccion img:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.parrafo{
+.parrafo {
     text-align: left;
-    margin: 10px ;
+    margin: 10px;
     padding: 20px;
 }
-.nombre{
-    
+
+.nombre {
+
     font-size: 1.5vw;
 }
 
-#precio{
+#precio {
     color: rgb(19, 17, 16);
     font-size: 10;
     font-weight: 400;
     padding-bottom: 20px;
-    
+
 }
-.estrella{
-    font-size:1.5vw;
+
+.estrella {
+    font-size: 1.5vw;
     color: rgb(214, 193, 57);
     border: 1px;
 }
-.reserva{
-    color:aliceblue ;
-    background-color:rgb(10, 84, 196);
+
+.reserva {
+    color: aliceblue;
+    background-color: rgb(10, 84, 196);
     border: rgb(10, 84, 196) 1px solid;
     cursor: pointer;
     padding: 4px;
 }
-.mapa{
+
+.mapa {
     margin-left: 12px;
     margin-top: 10px;
     padding: 10px;
-    align-items:self-end;
+    align-items: self-end;
 }
 
-.footer{
+.footer {
     background: rgb(48, 155, 222);
-    padding: 10px ;
+    padding: 10px;
     margin-top: 15px;
-    
+
 }
 
 
-#derechosreservados{
+#derechosreservados {
     background-color: #ffffff;
     margin-top: 100px;
     padding: 3px;
     font-family: 'Kanit', sans-serif;
     letter-spacing: 0.15vw;
-    width: 650px;
+    width: 570px;
 
     animation-name: letra-animada;
     animation-duration: 4s;
@@ -99,149 +107,275 @@ body{
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
-
-@keyframes letra-animada{
-    0%{background:#ffffff; left: 0;}
-    25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
-    50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135);left:240px }
-    75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197);left:360px}
-    100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255) ;left:480px}
+.ws_logo{
+    z-index: initial;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 400px;
+    left: 20px;
+}.titulosFooter{
+    color: black;
+    font-weight: bold;
+}
+.redes_footer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-@media screen and (max-width: 480px){
-
-    
-    .header{
-        
-        background-color:darkred ;
+@keyframes letra-animada {
+    0% {
+        background: #ffffff;
+        left: 0;
     }
 
-    .seccion{
+    25% {
+        background: rgb(157, 158, 160);
+        color: rgb(59, 58, 57);
+        left: 110px
+    }
+
+    50% {
+        background: rgb(123, 124, 126);
+        color: rgb(133, 134, 135);
+        left: 220px
+    }
+
+    75% {
+        background: rgb(115, 116, 116);
+        color: rgb(201, 201, 197);
+        left: 330px
+    }
+
+    100% {
+        background: rgb(103, 103, 103);
+        color: rgb(255, 255, 255);
+        left: 440px
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+
+    /* .header {
+        width: 100%;
+        background-color: darkred;
+    } */
+
+    .seccion {
         width: 40%;
         margin: 20px;
         height: 600px;
         flex-direction: column;
     }
 
-    .seccion img{
+    .seccion img {
         width: 200px;
         height: 100px;
-        }
-    .mapa{
+    }
+
+    .mapa {
         width: 200px;
         height: 150px;
         margin: 10px;
         padding: 1px;
-        }
+    }
 
-    .nombre{
-    
+    .nombre {
+
         font-size: 4vw;
-        }
+    }
 
-    .estrella{
-        font-size:4vw; 
-        }
+    .estrella {
+        font-size: 4vw;
+    }
 
 
-    .footer{ 
-        padding: 5px ;   
-        }
+    .footer {
 
-    #derechosreservados{
+
+        width: 100%;
+    }
+
+    #derechosreservados {
         letter-spacing: 0.001;
         font-size: 2vw;
         padding: 0px;
         margin-left: 0px;
+        width: 400px;
+        
+    }
+
+    @keyframes letra-animada {
+        0% {
+            background: #ffffff;
+            left: 0;
         }
-        @keyframes letra-animada{
-        0%{background:#ffffff; left: 0;}
-        25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57)}
-        50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135)}
-        75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197)}
-        100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255)}
+
+        25% {
+            background: rgb(157, 158, 160);
+            color: rgb(59, 58, 57)
+        }
+
+        50% {
+            background: rgb(123, 124, 126);
+            color: rgb(133, 134, 135)
+        }
+
+        75% {
+            background: rgb(115, 116, 116);
+            color: rgb(201, 201, 197)
+        }
+
+        100% {
+            background: rgb(103, 103, 103);
+            color: rgb(255, 255, 255)
         }
     }
-    @media screen and (min-width:481px) and (max-width:768px) {
-        .header{
-        
-            background-color:rgb(69, 0, 139) ;
-        }
-    
-        .seccion{
-            width: 90%;
-            margin: 10px;
-            height: 300px;
-            padding-left: 0px;
-        }
-        .seccion img{
-            width: 225px;
-            height: 280px;
-            margin:5px;
-            padding: 5px;
-            }
+}
 
-        .mapa{
-            width: 200px;
-            height: 250px;
-            margin: 10px;
-            padding: 1px;
-            }
+@media screen and (min-width:576px) and (max-width:768px) {
+    /* .header {
 
-            .nombre{
-    
-                font-size: 2.7vw;
-                }
-        
-            .estrella{
-                font-size:3vw; 
-                }
-        
-        
-            .footer{ 
-                padding: 5px ;   
-                }
-        
-            #derechosreservados{
-                letter-spacing: 0.001;
-                font-size: 2vw;
-                padding: 0px;
-                margin-left: 0px;
-                }
-                @keyframes letra-animada{
-                0%{background:#ffffff; left: 0;}
-                25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57)}
-                50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135)}
-                75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197)}
-                100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255)}
-                }
+        background-color: rgb(69, 0, 139);
+    } */
+
+    .seccion {
+        width: 90%;
+        margin: 10px;
+        height: 300px;
+        padding-left: 0px;
     }
-    @media screen and (min-width:769px) and (max-width:1024px){
-        .header{
-        
-            background-color:rgb(190, 31, 163) ;
-        }
-    
-        .seccion{
-            width: 80%;
-            margin: 10px;
-            height: 300px;
-            padding-left: 0px;
-        }
-        .seccion img{
-            width: 225px;
-            height: 280px;
-            margin:5px;
-            padding: 5px;
-            }
 
-        .mapa{
-            width: 200px;
-            height: 250px;
-            margin: 10px;
-            padding: 1px;
-            }
+    .seccion img {
+        width: 225px;
+        height: 280px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .mapa {
+        width: 200px;
+        height: 250px;
+        margin: 10px;
+        padding: 1px;
+    }
+
+    .nombre {
+
+        font-size: 2.7vw;
+    }
+
+    .estrella {
+        font-size: 3vw;
     }
 
 
+    .footer {
+        padding: 5px;
+    }
 
+    #derechosreservados {
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        width: 500px;
+    }
+
+    @keyframes letra-animada {
+        0% {
+            background: #ffffff;
+            left: 0;
+        }
+
+        25% {
+            background: rgb(157, 158, 160);
+            color: rgb(59, 58, 57)
+        }
+
+        50% {
+            background: rgb(123, 124, 126);
+            color: rgb(133, 134, 135)
+        }
+
+        75% {
+            background: rgb(115, 116, 116);
+            color: rgb(201, 201, 197)
+        }
+
+        100% {
+            background: rgb(103, 103, 103);
+            color: rgb(255, 255, 255)
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    /* .header {
+
+        background-color: rgb(190, 31, 163);
+    } */
+
+    .seccion {
+        width: 80%;
+        margin: 10px;
+        height: 300px;
+        padding-left: 0px;
+    }
+
+    .seccion img {
+        width: 225px;
+        height: 280px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .mapa {
+        width: 200px;
+        height: 250px;
+        margin: 10px;
+        padding: 1px;
+    }
+
+    .footer {
+        padding: 5px;
+    }
+
+    #derechosreservados {
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        width: 660px;
+    }
+
+    @keyframes letra-animada {
+        0% {
+            background: #ffffff;
+            left: 0;
+        }
+
+        25% {
+            background: rgb(157, 158, 160);
+            color: rgb(59, 58, 57)
+        }
+
+        50% {
+            background: rgb(123, 124, 126);
+            color: rgb(133, 134, 135)
+        }
+
+        75% {
+            background: rgb(115, 116, 116);
+            color: rgb(201, 201, 197)
+        }
+
+        100% {
+            background: rgb(103, 103, 103);
+            color: rgb(255, 255, 255)
+        }
+    }
+}
