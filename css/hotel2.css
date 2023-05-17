@@ -4,16 +4,28 @@
 
 body {
     margin: 0;
-    background-color: rgb(172, 213, 248);
+    /* background-color: rgb(172, 213, 248); */
+    background-image: url(../img/02.jpg);
+    background-size: cover;
+    background-position: center;
     color: rgb(15, 16, 16);
 
 
 }
 
-.header {
-    background: rgb(48, 155, 222);
-    padding: 40px;
-    margin-bottom: 15px;
+header {
+    font-size: 2vw;
+    background-color: silver;
+    padding: 1.5vw;
+    opacity: 75%;
+    font-family: 'Playfair Display',serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    font-style: italic;
 }
 
 img {
@@ -74,6 +86,32 @@ img {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+}
+.titulosFooter{
+    color: black;
+    font-weight: bold;
+}
+.redes_footer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logos{
+    width:100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: black;
+}
+
+.ws_logo{
+    z-index: initial;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 400px;
+    left: 20px;
 }
 
 @keyframes letra-animada {

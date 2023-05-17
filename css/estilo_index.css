@@ -17,12 +17,13 @@ h1 {
     font-size: 4.5vw;
 }
 
-nav {
+nav,#pie {
 
     font-size: 2vw;
     background-color: silver;
     padding: 1.5vw;
     opacity: 75%;
+    font-family: 'Playfair Display',serif;
 
 
 }

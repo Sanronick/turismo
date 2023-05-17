@@ -1,11 +1,11 @@
 * {
     /* margin: 10px; */
-    font-family: Verdana;
+    font-family: 'Playfair Display',serif;
     box-sizing: border-box;
     padding: 10px;
 }
 body{
-    background-image: url(/img/02.jpg);
+    background-image: url(../img/02.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -18,6 +18,45 @@ body{
     padding: 10px
    
 }
+h1 {
+    text-align: center;
+    font-size: 4.5vw;
+    font-family:'Playfair Display',serif;
+    font-weight: bold;
+}
+
+nav,#pie {
+
+    font-size: 2vw;
+    background-color: silver;
+    padding: 1.5vw;
+    opacity: 75%;
+    font-family: 'Playfair Display',serif;
+
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+a {
+    font-size: 3.7vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    font-style: italic;
+}
+
 .box1{
     grid-area: 1 / 1 / span 2 / span 4;
 }

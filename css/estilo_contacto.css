@@ -2,18 +2,18 @@
     padding: 0;
     margin: 0;
 }
-.color{
+/* .color{
     color:blue;
-}
+} */
 
 body{
     width: 95%;
-    background-image:url(/img/02.jpg);
+    background-image:url(../img/02.jpg);
     background-size: cover;
     background-position: center;
     margin: 3%;
 }
-.navbar-brand{
+/* .navbar-brand{
     font-weight: bold;
     font-size: 25px;
     &:hover{
@@ -24,6 +24,44 @@ body{
     display: flex;
     justify-content: space-around;
     width: 100%;
+} */
+h1 {
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: 'Playfair Display',serif;
+    font-weight: bold;
+}
+
+nav,#pie {
+
+    font-size: 2vw;
+    background-color: silver;
+    padding: 1.5vw;
+    opacity: 75%;
+    font-family: 'Playfair Display',serif;
+
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+a {
+    font-size: 3.7vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    font-style: italic;
 }
 .form-control, .form-select{
     background-color: gray;

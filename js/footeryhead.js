@@ -15,3 +15,23 @@ let footer=`<div>
 <div id="animacion"><p id="derechosreservados">&#169 2023 grupo 4 Full Stack Python - All Rights Reserved</p></div>`
 
 document.getElementById('pie').innerHTML=footer
+
+let header=`
+<h1>Front Trips</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Turismo copy.html">Excursiones</a>
+                </li>
+                <li>
+                    <a href="hotel.html">Hoteles</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>`
+document.getElementById('cabeza').innerHTML=header
