@@ -1,20 +1,37 @@
-let footer=`<div>
-<a href="https://wa.me/5491169950277"><img src="img/logowhatsapp.svg" class="ws_logo" alt="Logo de Whats app"></a>
-</div>
-<h3 class="tituloFooter">Visita nuestras redes</h3>
-<ul class="redes_footer">
-    <li><a href=""><img src="img/logofacebook.svg" class="logos" alt="Logo de Facebook"></a></li>
-    <li><a href=""><img src="img/logoemail.svg" class="logos" alt="Logo de Gmail"></a></li>
-    <li><a href=""><img src="./img/logoinstagram.svg" class="logos" alt="Logo de Instagram"></a></li>
-</ul> 
-<ul class="redes_footer">
-    <li class="condiciones-generales">Condiciones Generales</li>
-    <li class="politica-seguridad">Politica de Seguridad</li>
-    <li class="terminos-condiciones">Terminos y condiciones de uso</li>
-</ul>               
-<div id="animacion"><p id="derechosreservados">&#169 2023 grupo 4 Full Stack Python - All Rights Reserved</p></div>`
+let footer=`<div id="animacion"><p id="derechosreservados">&#169 2023 grupo 4 Full Stack Python - All Rights Reserved</p></div>`
 
-document.getElementById('pie').innerHTML=footer
+document.getElementById('pie-animacion').innerHTML=footer;
+
+let divFooter = document.getElementsByClassName("div-footer")[0];
+let condicionesGenerales = document.getElementsByClassName("condiciones-generales")[0];
+
+condicionesGenerales.addEventListener("mousedown", respuestaClick);
+condicionesGenerales.addEventListener("mouseup", limpiarDiv);
+
+let politicaSeguridad = document.getElementsByClassName("politica-seguridad")[0];
+politicaSeguridad.addEventListener("mousedown", respuestaClick1);
+politicaSeguridad.addEventListener("mouseup", limpiarDiv);
+
+
+let terminosCondiciones = document.getElementsByClassName("terminos-condiciones")[0];
+terminosCondiciones.addEventListener("mousedown", respuestaClick2);
+terminosCondiciones.addEventListener("mouseup", limpiarDiv);
+
+
+
+function respuestaClick() {
+    divFooter.innerHTML = '<p>Informes de servicios y tarifas: en todos los casos con orientativos y no revisten confirmación.</p>';
+}
+function respuestaClick1() {
+    divFooter.innerHTML = '<p>El site opera con redes, protegidas por sistemas standard de seguridad online y de protección de contraseñas en la Web.</p>';
+}
+function respuestaClick2() {
+    divFooter.innerHTML = '<p>Como condición de uso de este Sitio Web, usted garantiza que toda la información que proporciona en este Sitio Web es verdadera, precisa y completa</p>';
+}
+function limpiarDiv() {
+    divFooter.innerHTML = "";
+}
+
 
 let header=`
 <h1>Front Trips</h1>

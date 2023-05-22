@@ -24,8 +24,6 @@ nav,#pie {
     padding: 1.5vw;
     opacity: 75%;
     font-family: 'Playfair Display',serif;
-
-
 }
 
 ul {
@@ -35,7 +33,6 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
 }
 
 a {

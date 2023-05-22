@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
 }
-/* .color{
-    color:blue;
-} */
+
 
 body{
     width: 95%;
@@ -13,18 +11,7 @@ body{
     background-position: center;
     margin: 3%;
 }
-/* .navbar-brand{
-    font-weight: bold;
-    font-size: 25px;
-    &:hover{
-        font-style: italic;
-    }                         
-}
-.navbar-nav{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-} */
+
 h1 {
     text-align: center;
     font-size: 4.5vw;
