@@ -23,7 +23,7 @@ nav,#pie {
 
     font-size: 2vw;
     background-color: silver;
-    padding: 1.5vw;
+    padding: 0.3vw;
     opacity: 75%;
     font-family: 'Playfair Display',serif;
 
@@ -194,10 +194,6 @@ a:hover {
 @media screen and (max-width: 576px) {
 
 
-    /* .header {
-        width: 100%;
-        background-color: darkred;
-    } */
 
     .seccion {
         width: 40%;

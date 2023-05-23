@@ -18,12 +18,12 @@ h1 {
 }
 
 nav,#pie {
-
     font-size: 2vw;
     background-color: silver;
-    padding: 1.5vw;
+    padding: 0.3vw;
     opacity: 75%;
     font-family: 'Playfair Display',serif;
+
 }
 
 ul {
@@ -184,6 +184,22 @@ iframe {
     flex-direction: row;
     justify-content: space-around;
 }
+#clima{
+    width: 30vw;
+    height: 23vw;
+    background-image: url(../img/obelisco.gif);
+    background-size: cover;
+    opacity: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.9vw;
+    display: flex;
+    flex-direction: column;
+}
+.icono{
+    height: 8vw;
+}
 @keyframes letra-animada{
     0%{background:#ffffff; left: 0;}
     25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
@@ -279,29 +295,40 @@ iframe {
         padding: auto;
         font-size: 3vw;
     }
-    #derechosreservados{
-        background-color: #ffffff;
-        margin-top: 10vw;
-        padding: 3px;
-        font-family: 'Kanit', sans-serif;
-        letter-spacing: 0.15vw;
-        width: 45vw;
-    
-        animation-name: letra-animada;
-        animation-duration: 4s;
-        animation-delay: 2s;
-        position: relative;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
+    #derechosreservados {
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        width: 400px;
+        
     }
-    
-    @keyframes letra-animada{
-        0%{background:#ffffff; left: 0;}
-        25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
-        50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135);left:240px }
-        75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197);left:360px}
-        100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255) ;left:480px}
+
+    @keyframes letra-animada {
+        0% {
+            background: #ffffff;
+            left: 0;
+        }
+
+        25% {
+            background: rgb(157, 158, 160);
+            color: rgb(59, 58, 57)
+        }
+
+        50% {
+            background: rgb(123, 124, 126);
+            color: rgb(133, 134, 135)
+        }
+
+        75% {
+            background: rgb(115, 116, 116);
+            color: rgb(201, 201, 197)
+        }
+
+        100% {
+            background: rgb(103, 103, 103);
+            color: rgb(255, 255, 255)
+        }
     }
 }
 
@@ -389,6 +416,40 @@ iframe {
     .footer{
         margin: 1vw;
     }
+    #derechosreservados {
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        width: 500px;
+    }
+
+    @keyframes letra-animada {
+        0% {
+            background: #ffffff;
+            left: 0;
+        }
+
+        25% {
+            background: rgb(157, 158, 160);
+            color: rgb(59, 58, 57)
+        }
+
+        50% {
+            background: rgb(123, 124, 126);
+            color: rgb(133, 134, 135)
+        }
+
+        75% {
+            background: rgb(115, 116, 116);
+            color: rgb(201, 201, 197)
+        }
+
+        100% {
+            background: rgb(103, 103, 103);
+            color: rgb(255, 255, 255)
+        }
+    }
 
 }
 
@@ -468,5 +529,39 @@ iframe {
         width: 90vw;
         height: 10vw;
         font-size: 2vw;
+    }
+    #derechosreservados {
+        letter-spacing: 0.001;
+        font-size: 2vw;
+        padding: 0px;
+        margin-left: 0px;
+        width: 660px;
+    }
+
+    @keyframes letra-animada {
+        0% {
+            background: #ffffff;
+            left: 0;
+        }
+
+        25% {
+            background: rgb(157, 158, 160);
+            color: rgb(59, 58, 57)
+        }
+
+        50% {
+            background: rgb(123, 124, 126);
+            color: rgb(133, 134, 135)
+        }
+
+        75% {
+            background: rgb(115, 116, 116);
+            color: rgb(201, 201, 197)
+        }
+
+        100% {
+            background: rgb(103, 103, 103);
+            color: rgb(255, 255, 255)
+        }
     }
 }

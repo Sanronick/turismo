@@ -10,28 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo_index.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Front Trips</title>
 </head>
 
 <body>
+    <div id="clima">
+        <p>Ciudad Autonoma de Buenos Aires</p>
+        <div v-for="tiempo in weather" :key="tiempo.icon">
+        <p>Estado del Clima <span>{{tiempo.description}}</span></p>
+       <p>Temperatura <span>{{main.temp}}° C</span></p>
+       <img :src="`https://openweathermap.org/img/wn/${tiempo.icon}@2x.png`" alt="icon" class="icono">
+    </div>
+    <script src="js/appclima.js"></script>
+    </div>
     <header id="cabeza">
-        <!-- <h1>Front Trips</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="Turismo copy.html">Excursiones</a>
-                </li>
-                <li>
-                    <a href="hotel.html">Hoteles</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> -->
     </header>
     <main>
         <article class="articlen">

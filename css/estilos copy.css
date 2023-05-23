@@ -1,5 +1,4 @@
 * {
-    /* margin: 10px; */
     font-family: 'Playfair Display',serif;
     box-sizing: border-box;
     padding: 10px;
@@ -13,7 +12,6 @@ body{
 .container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    /* background-color: #dce9e7; */
     text-align: center;
     padding: 10px
    
@@ -29,7 +27,7 @@ nav,#pie {
 
     font-size: 2vw;
     background-color: silver;
-    padding: 1.5vw;
+    padding: 0.3vw;
     opacity: 75%;
     font-family: 'Playfair Display',serif;
 
@@ -81,9 +79,6 @@ a:hover {
     grid-area: 5 / 4 / span 11/ span 1;
 }
 
-/* .box7{
-    grid-area: 17 / 1 / span 17/ span 4;
-} */
 .titulosFooter{
     color: black;
     font-weight: bold;

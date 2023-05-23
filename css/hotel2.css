@@ -4,13 +4,10 @@
 
 body {
     margin: 0;
-    /* background-color: rgb(172, 213, 248); */
     background-image: url(../img/02.jpg);
     background-size: cover;
     background-position: center;
     color: rgb(15, 16, 16);
-
-
 }
 
 header {
@@ -35,7 +32,6 @@ img {
 
 .container {
     display: flex;
-
     padding: 5px;
     flex-wrap: wrap;
 
@@ -64,10 +60,12 @@ img {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer {
-    background: rgb(48, 155, 222);
-    padding: 10px;
-    margin-top: 15px;
+#pie {
+    font-size: 2vw;
+    background-color: silver;
+    padding: 0.3vw;
+    opacity: 75%;
+    font-family: 'Playfair Display',serif;
 
 }
 
