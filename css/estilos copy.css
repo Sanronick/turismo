@@ -1,7 +1,5 @@
 * {
-    font-family: 'Playfair Display',serif;
     box-sizing: border-box;
-    padding: 10px;
 }
 body{
     background-image: url(../img/02.jpg);
@@ -21,38 +19,6 @@ h1 {
     font-size: 4.5vw;
     font-family:'Playfair Display',serif;
     font-weight: bold;
-}
-
-nav,#pie {
-
-    font-size: 2vw;
-    background-color: silver;
-    padding: 0.3vw;
-    opacity: 75%;
-    font-family: 'Playfair Display',serif;
-
-
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-a {
-    font-size: 3.7vw;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-a:hover {
-    font-style: italic;
 }
 
 .box1{
@@ -79,55 +45,7 @@ a:hover {
     grid-area: 5 / 4 / span 11/ span 1;
 }
 
-.titulosFooter{
-    color: black;
-    font-weight: bold;
-}
-.redes_footer{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.logos{
-    width:100px;
-    height: 100px;
-    padding: 10px;
-    border-radius: 7px;
-    border-color: black;
-}
 
-.ws_logo{
-    z-index: initial;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    top: 400px;
-    left: 20px;
-}
-#derechosreservados{
-    background-color: #ffffff;
-    margin-top: 100px;
-    padding: 3px;
-    font-family: 'Kanit', sans-serif;
-    letter-spacing: 0.15vw;
-    width: 650px;
-
-    animation-name: letra-animada;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    position: relative;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-}
-@keyframes letra-animada{
-    0%{background:#ffffff; left: 0;}
-    25%{background: rgb(157, 158, 160);color:rgb(59, 58, 57);left:120px}
-    50%{background:rgb(123, 124, 126);color:rgb(133, 134, 135);left:240px }
-    75%{background: rgb(115, 116, 116);color:rgb(201, 201, 197);left:360px}
-    100%{background:rgb(103, 103, 103);color:rgb(255, 255, 255) ;left:480px}
-}
 @media screen and (max-width: 400px){
     
 }
