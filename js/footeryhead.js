@@ -34,9 +34,11 @@ function limpiarDiv() {
 
 
 let header=`
-<h1>Front Trips</h1>
+<div class="head">
+            <img src="img/Front Trips.png" alt="Front Trips" class="logo">
+            </div>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
