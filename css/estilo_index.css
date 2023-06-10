@@ -90,51 +90,6 @@ iframe {
     padding: 2em;
 }
 
-/* #pie {
-    background-color: silver;
-    opacity: 75%;
-    margin: 15em 0em 0em;
-    padding: 1px;
-
-} */
-
-/* #derechosreservados {
-    background-color: #ffffff;
-    margin-top: 0.5vw;
-    padding: 3px;
-    letter-spacing: 0.15vw;
-    width: 48%;
-
-    animation-name: letra-animada;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    position: relative;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-} */
-
-/* .ws_logo {
-    z-index: initial;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    top: 400px;
-    left: 20px;
-}
-
-.titulosFooter {
-    color: black;
-    font-weight: bold;
-}
-
-.redes_footer {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-} */
-
 .slider-frame {
     width: 80%;
     height: auto;
@@ -383,11 +338,6 @@ iframe {
         display: flex;
         flex-direction: column;
     }
-    
-    h3 {
-        margin: 1em;
-    }
-    
     .equi,
     #img2 {
         width: 95%;
@@ -416,28 +366,5 @@ iframe {
         padding: 2em;
     }
     
-    #pie {
-        background-color: silver;
-        opacity: 75%;
-        margin: 15em 0em 0em;
-        padding: 1px;
-    
-    }
-    
-    /* #derechosreservados {
-        background-color: #ffffff;
-        margin-top: 0.5vw;
-        padding: 3px;
-        letter-spacing: 0.15vw;
-        width: 48%;
-    
-        animation-name: letra-animada;
-        animation-duration: 4s;
-        animation-delay: 2s;
-        position: relative;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
-    } */
     
 }

@@ -127,11 +127,22 @@ a:hover {
 @media screen and (max-width: 576px) {
     #derechosreservados {
         letter-spacing: 0.001;
-        font-size: 1.8vw;
+        font-size: 0.8em;
         padding: 0px;
         margin-left: 0px;
         width:60%;
         
+    }
+    .head{
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+
     }
 }
 @media screen and (min-width:576px) and (max-width:768px) {
