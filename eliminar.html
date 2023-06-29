@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="css/estilo_index.css">
+</head>
+
+<body>
+    <h2>Eliminacion de Excursiones</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th align="right">Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="excursion in excursiones">
+                <td>{{ excursion.codigo }}</td>
+                <td>{{ excursion.descripcion }}</td>
+                <td align="right">{{ excursion.cantidad }}</td>
+                <td align="right">{{ excursion.precio }}</td>
+                <td><button @click="eliminarExcursion(excursion.codigo)">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="inventario.html" role="button" class="btn btn-secondary" target="_self">Adm de Inventario</a>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    excursiones: []
+                }
+            },
+            methods: {
+                obtenerExcursiones() {
+                    const URL = "https://sanronick.pythonanywhere.com/"
+
+                    fetch(URL + 'excursiones')
+                        .then(response => {
+                            if (response.ok) {
+                                return response.json()
+                            } else {
+                                throw new Error('Error al mostrar las excursiones')
+                            }
+                        })
+                        .then(data => {
+                            this.excursiones = data
+                        })
+                        .catch(error => {
+                            console.log('Error:', error)
+                            alert('Error al mostrar las excursiones')
+                        })
+                },
+                eliminarExcursion(codigo) {
+                    const URL = "https://sanronick.pythonanywhere.com/"
+
+                    fetch(URL + `excursiones/${codigo}`, { method: 'DELETE' })
+                        .then(response => {
+                            if (response.ok) {
+                                
+                                this.excursiones = this.excursiones.filter(excursion => excursion.codigo !== codigo)
+                                console.log('Excursion eliminada correctamente.')
+                            }
+                        })
+                        .catch(error => {
+                            console.log('Error:', error)
+                            alert('Error al eliminar la excursion')
+                        })
+                }
+            },
+            mounted() {
+                this.obtenerExcursiones()
+            }
+        })
+        app.mount('body')
+    </script>
+</body>
+
+</html>
+

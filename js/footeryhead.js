@@ -1,6 +1,6 @@
-let footer=`<div id="animacion"><p id="derechosreservados">&#169 2023 grupo 4 Full Stack Python - All Rights Reserved</p></div>`
+let footer = `<div id="animacion"><p id="derechosreservados">&#169 2023 grupo 4 Full Stack Python - All Rights Reserved</p></div>`
 
-document.getElementById('pie-animacion').innerHTML=footer;
+document.getElementById('pie-animacion').innerHTML = footer;
 
 let divFooter = document.getElementsByClassName("div-footer")[0];
 let condicionesGenerales = document.getElementsByClassName("condiciones-generales")[0];
@@ -33,7 +33,7 @@ function limpiarDiv() {
 }
 
 
-let header=`
+let header = `
 <div class="head">
             <img src="img/Front Trips.png" alt="Front Trips" class="logo">
             </div>
@@ -56,4 +56,4 @@ let header=`
                 </li>
             </ul>
         </nav>`
-document.getElementById('cabeza').innerHTML=header
+document.getElementById('cabeza').innerHTML = header

@@ -1,5 +1,6 @@
 import sqlite3
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 DATABASE='fronttrips.db'
 def get_db_connection():
     print('Obteniendo conexion...')
@@ -152,7 +153,7 @@ class Carrito():
 
 
 app=Flask(__name__)
-
+CORS(app)
 carrito=Carrito()
 inventario=Inventario()
 
