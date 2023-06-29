@@ -51,6 +51,9 @@ let header=`
                 <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
+                <li>
+                    <a href="administradores.html">Administradores</a>
+                </li>
             </ul>
         </nav>`
 document.getElementById('cabeza').innerHTML=header
