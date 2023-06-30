@@ -192,6 +192,10 @@ def modificar_excursion(codigo):
     nuevo_precio=request.json.get('precio')
     return inventario.modificar_excursion(codigo,nueva_descripcion,nueva_cantidad,nuevo_precio)
 
+@app.route('/excursiones/<int:codigo>',methods=['DELETE'])
+def eliminar_excursion(codigo):
+    return inventario.eliminar_excursion(codigo)
+
 @app.route('/carrito',methods=['POST'])
 def agregar_ex():
     codigo=request.json.get('codigo')
