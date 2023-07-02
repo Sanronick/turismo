@@ -10,7 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/estilo_modificaciones.css">
     <link rel="stylesheet" href="css/estilo_index.css">
+
     <title>Inventario de Excursiones</title>
 </head>
 
@@ -41,56 +43,8 @@
     </main>
 
     <script src="https://unpkg.com/vue@next"></script>
-    <script>
-        const app = Vue.createApp({
-            data() {
-                return {
-                    excursiones: []
-                }
-            },
-            methods: {
-                obtenerExcursiones() {
-                    const URL = "https://sanronick.pythonanywhere.com/"
+    <script src="js/eliminar.js"></script>
 
-                    fetch(URL + 'excursiones')
-                        .then(response => {
-                            if (response.ok) {
-                                return response.json()
-                            } else {
-                                throw new Error('Error al mostrar las excursiones')
-                            }
-                        })
-                        .then(data => {
-                            this.excursiones = data
-                        })
-                        .catch(error => {
-                            console.log('Error:', error)
-                            alert('Error al mostrar las excursiones')
-                        })
-                },
-                eliminarExcursion(codigo) {
-                    const URL = "https://sanronick.pythonanywhere.com/"
-
-                    fetch(URL + `excursiones/${codigo}`, { method: 'DELETE' })
-                        .then(response => {
-                            if (response.ok) {
-                                
-                                this.excursiones = this.excursiones.filter(excursion => excursion.codigo !== codigo)
-                                console.log('Excursion eliminada correctamente.')
-                            }
-                        })
-                        .catch(error => {
-                            console.log('Error:', error)
-                            alert('Error al eliminar la excursion')
-                        })
-                }
-            },
-            mounted() {
-                this.obtenerExcursiones()
-            }
-        })
-        app.mount('body')
-    </script>
 </body>
 
 </html>

@@ -15,7 +15,15 @@ body {
     flex-wrap: wrap;
 
 }
-
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.menuAdmin{
+    color: blue;
+}
 
 #clima {
     background-color: silver;

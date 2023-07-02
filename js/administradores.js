@@ -3,6 +3,8 @@ let usuarios = [
 ];
 
 
+
+
 function validarEmail() {
     if (document.fvalida.email.value.length === 0) {
         Toastify({
@@ -58,8 +60,8 @@ function VerificarUsuario() {
 
 var logueo = document.createElement("div");
 var contenedorFormulario = document.getElementsByClassName("contenedorFormulario")[0];
-
 var teLogueaste = false;
+
 function verificarContraseña() {
     let usuarioContraseña = false;
     usuarios.forEach(usuario => {
@@ -68,6 +70,7 @@ function verificarContraseña() {
             }
     })
         if (usuarioContraseña) {
+            teLogueaste = true;
             Toastify({
                 text: `Su ingreso como administrador ha sido exitoso`,
                 duration: 2000,
@@ -78,7 +81,6 @@ function verificarContraseña() {
                 background: "linear-gradient(0deg, rgba(4,9,244,1) 0%, rgba(48,45,253,1) 100%)",
                 },
             }).showToast();
-            teLogueaste = true;
             logueo.textContent = "";
             logueo.textContent =`Usted esta navegando bajo el usuario de administrador: ${document.fvalida.email.value}`;
             contenedorFormulario.appendChild(logueo);
@@ -97,6 +99,30 @@ function verificarContraseña() {
             }).showToast();
         }
 }
+var opciones = document.getElementsByClassName("menuAdmin");
+Array.from(opciones).forEach((item) => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (teLogueaste) {
+            window.location.href = event.target.href;
+        } else {
+            Toastify({
+                text: `Solo los administradores tienen acceso a estas opciones. Por favor ingrese su email y contraseña`,
+                duration: 2000,
+                gravity: "top", 
+                position: "center", 
+                stopOnFocus: true, 
+                style: {
+                background: "#ff4500",
+                },
+            }).showToast();
+        }
+    })
+})
+
+
+
+
 
 
 
