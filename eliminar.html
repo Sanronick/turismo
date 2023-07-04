@@ -10,7 +10,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <link rel="stylesheet" href="css/estilo_modificaciones.css">
     <link rel="stylesheet" href="css/estilo_index.css">
 
     <title>Inventario de Excursiones</title>
@@ -18,8 +17,10 @@
 
 <body>
     <main>
-        <h2>Eliminacion de Excursiones</h2>
-        <table class="table table-striped">
+        <div id="cargainventario">
+
+            <h2>Eliminacion de Excursiones</h2>
+            <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Código</th>
@@ -40,6 +41,7 @@
             </tbody>
         </table>
         <a href="inventario.html" role="button" class="btn btn-secondary" target="_self">Adm de Inventario</a>
+    </div>
     </main>
 
     <script src="https://unpkg.com/vue@next"></script>

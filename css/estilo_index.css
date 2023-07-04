@@ -18,11 +18,20 @@ body {
 .contenedor-centrado {
     display:flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .menuAdmin{
     color: blue;
+}
+a{
+    margin:2px;
+}
+#cargainventario{
+    border: 2px inset silver;
+    padding: 10px;
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #clima {

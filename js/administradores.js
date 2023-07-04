@@ -1,10 +1,6 @@
 let usuarios = [
     {id:1, email:"grupo4codoacodo@fullstack.com", contraseña:"elfuturo"},
 ];
-
-
-
-
 function validarEmail() {
     if (document.fvalida.email.value.length === 0) {
         Toastify({
